@@ -1,0 +1,47 @@
+.contact {
+  margin: 20px;
+  padding-bottom: 2.5rem;
+}
+.contact-image {
+  position: relative;
+  background-image: url("/src/assets/images/contact-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(53, 63, 232, 1);
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-image h3 {
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.form-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px 0 0 10px;
+}
+
+.submit {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+  background-color: rgba(255, 136, 31, 1);
+  color: white;
+  cursor: pointer;
+}

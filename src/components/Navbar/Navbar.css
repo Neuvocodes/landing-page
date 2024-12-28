@@ -1,0 +1,71 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(53, 63, 232, 1);
+  color: white;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+.logo p {
+  color: rgba(255, 136, 31, 1);
+  font-family: Montserrat;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.logo p span {
+  color: white;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.logo_image {
+  width: 2rem;
+}
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  .links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

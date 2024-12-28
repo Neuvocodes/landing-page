@@ -1,0 +1,99 @@
+.container-expertise {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 10%;
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 10%;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+
+.expertise-body {
+  padding: 10px;
+}
+
+.expertise-description {
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.blue-expertise {
+  background-color: rgba(53, 63, 232, 1);
+}
+
+.blue-expertise .expertise-title,
+.blue-expertise .expertise-description {
+  color: white;
+}
+
+.expertise-title {
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.image-expertise {
+  gap: 0px;
+  opacity: 0px;
+  width: 80px;
+  align-self: center;
+}
+
+.expertise-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  width: 85%;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.expertise-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.expertise-component {
+  padding: 20px;
+}
+
+.expertise-Ctitle h3 {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  color: rgba(53, 63, 232, 1);
+  font-weight: 700;
+}
+
+.expertise-Ctitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: justify;
+  line-height: 130%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 5%;
+}
+
+.expertise-Ctitle p {
+  color: rgba(255, 136, 31, 1);
+  font-weight: 700;
+  margin-bottom: 0px;
+}

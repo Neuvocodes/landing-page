@@ -1,0 +1,68 @@
+.container-product {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 10px;
+  margin-bottom: 10px;
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.product-body {
+  padding: 20px;
+}
+
+.description {
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 14.63px;
+  text-align: justify;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgb(114, 114, 114);
+}
+
+.title {
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: black;
+}
+
+.image-product {
+  background-color: rgba(42, 67, 133, 1);
+  gap: 0px;
+  border-radius: 15px 15px 0px 0px;
+  opacity: 0px;
+}
+
+.product-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+.product-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.product-component {
+  padding: 20px;
+}
+
+.product-title h3 {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  color: rgba(53, 63, 232, 1);
+  font-weight: 700;
+}
