@@ -1,9 +1,13 @@
+.navbar-container {
+  width: 100%;
+  background-color: rgba(53, 63, 232, 1);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: rgba(53, 63, 232, 1);
   color: white;
   width: 100%;
 }
@@ -48,7 +52,7 @@
   width: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .links {
     display: none;
     flex-direction: column;
@@ -67,5 +71,38 @@
 
   .menu-icon {
     display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    gap: 1rem;
+  }
+
+  .logo_image {
+    width: 3.5rem;
+  }
+
+  .links {
+    gap: 2rem;
+  }
+
+  .links a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .links a {
+    font-size: 1rem;
   }
 }

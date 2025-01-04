@@ -5,6 +5,15 @@
   padding: 20px;
   background-color: rgba(53, 63, 232, 1);
   color: #fff;
+  width: 100%; /* Ensure background color covers the entire container */
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .footer-logo {
@@ -66,6 +75,12 @@
 .menu-list {
   display: flex;
   flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.menu-container {
+  width: 100%;
 }
 
 .contact-body img,
@@ -91,7 +106,7 @@
 .maps iframe {
   width: 100%;
   max-height: 200px;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .maps {
@@ -103,13 +118,43 @@
   .footer-logo,
   .contact-list,
   .menu-list,
-  .social-media {
-    flex: 1 1 45%;
+  .maps {
+    flex: 1 1 30%; /* Arrange in a single row on larger screens */
+    font-size: 1rem;
+  }
+
+  .menu-container {
+    max-width: 250px;
+  }
+
+  .footer-logo {
+    flex-direction: column;
+    max-width: 150px;
+  }
+
+  .contact-list {
+    max-width: 768px;
   }
 
   .maps {
-    flex: 1 1 100%;
+    max-width: 800px;
     height: 200px;
-    background-color: #444;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-logo,
+  .contact-list,
+  .menu-list,
+  .maps {
+    flex: 1 1 22%;
   }
 }

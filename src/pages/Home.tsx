@@ -18,13 +18,19 @@ const Home: React.FC = () => {
       image: product_1,
       name: "Wira Wiri Indonesia",
       description:
-        "Wirawiri adalah wadah untuk membantu keseharian Anda,melayani jasa pengiriman Makanan,Barang & Penjemputan",
+        "Wirawiri is a place to help your daily life, serving food delivery, goods & pick-up services.",
     },
     {
       image: product_2,
       name: "Pertemanan Sejiwa",
       description:
-        "Pertemanan Sejiwa adalah platform digital berbasis informasi dan konsultasi. Platform ini berfokus pada keilmuwan psikologi.",
+        "Pertemanan Sejiwa is a digital platform based on information and consultation. This platform focuses on the science of psychology.",
+    },
+    {
+      image: product_2,
+      name: "Pertemanan Sejiwa",
+      description:
+        "Pertemanan Sejiwa is a digital platform based on information and consultation. This platform focuses on the science of psychology.",
     },
   ];
 

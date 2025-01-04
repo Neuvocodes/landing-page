@@ -10,22 +10,24 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="navbar">
-      <div className="logo">
-        <img src={logo} alt="" className="logo_image" />
-        <p>
-          Neuovo<span>Code</span>
-        </p>
-      </div>
-      <div className={`links ${isMobileMenuOpen ? "active" : ""}`}>
-        <a href="#home">Home</a>
-        <a href="#our-expertise">Services</a>
-        <a href="#contact">About Us</a>
-      </div>
-      <div className="menu-icon" onClick={toggleMobileMenu}>
-        &#9776;
-      </div>
-    </nav>
+    <div className="navbar-container">
+      <nav className="navbar">
+        <div className="logo">
+          <img src={logo} alt="" className="logo_image" />
+          <p>
+            Neuovo<span>Code</span>
+          </p>
+        </div>
+        <div className={`links ${isMobileMenuOpen ? "active" : ""}`}>
+          <a href="#home">Home</a>
+          <a href="#our-expertise">Services</a>
+          <a href="#contact">About Us</a>
+        </div>
+        <div className="menu-icon" onClick={toggleMobileMenu}>
+          &#9776;
+        </div>
+      </nav>
+    </div>
   );
 };
 

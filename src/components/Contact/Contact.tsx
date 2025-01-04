@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 
 const Contact: React.FC = () => {
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log(message);
+  };
+
   return (
     <div className="contact" id="contact">
       <div className="contact-image">
@@ -9,7 +16,7 @@ const Contact: React.FC = () => {
       </div>
 
       <div className="form">
-        <form method="post">
+        <form onSubmit={handleSubmit}>
           <div className="input-group">
             <input
               type="text"
@@ -18,6 +25,8 @@ const Contact: React.FC = () => {
               required
               placeholder="Send Your Message"
               className="form-input"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             />
             <input type="submit" className="submit" />
           </div>

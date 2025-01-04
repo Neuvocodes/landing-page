@@ -1,8 +1,11 @@
-.experience {
+.experience-container {
   background-color: rgb(255, 255, 255);
   padding: 20px;
-  text-align: left;
   border: 1px solid rgba(243, 243, 243, 0.1);
+}
+
+.experience {
+  text-align: left;
 }
 
 .experience img {
@@ -10,6 +13,7 @@
   height: auto;
   text-align: center;
   margin-bottom: 10px;
+  border-radius: 20px;
 }
 
 .experience h3 {
@@ -63,12 +67,24 @@
 }
 
 @media (min-width: 768px) {
-  .experience {
+  .experience-container {
     padding: 40px;
   }
 
+  .experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+  }
+
   .experience h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
   }
 
   .experience p {
@@ -81,5 +97,74 @@
 
   .experience h5 {
     font-size: 1.2rem;
+  }
+  .experience-user {
+    line-height: 180%;
+  }
+  .experience-descrip span {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+}
+
+@media (min-width: 1024px) {
+  .experience-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .experience img {
+    width: 40%;
+    margin-right: -40px;
+    border-radius: 40px 0 0 40px;
+  }
+
+  .experience-descrip {
+    width: 60%;
+  }
+
+  .experience p {
+    font-size: 1.2rem;
+  }
+
+  .experience h4 {
+    font-size: 1.6rem;
+  }
+
+  .experience h5 {
+    font-size: 1.4rem;
+  }
+
+  .experience-descrip span {
+    font-size: 2.5rem;
+  }
+
+  .experience-user {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .experience img {
+    width: 50%;
+  }
+
+  .experience-descrip {
+    width: 50%;
+  }
+
+  .experience p {
+    font-size: 1.5rem;
+  }
+
+  .experience h4 {
+    font-size: 1.8rem;
+  }
+
+  .experience h5 {
+    font-size: 1.5rem;
   }
 }
